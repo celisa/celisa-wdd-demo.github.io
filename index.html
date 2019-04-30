@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Topography of Tears</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/style.css">
+ <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+</head>
+<body>
+<body class="back-row-toggle splat-toggle">
+  <div class="rain front-row"></div>
+  <div class="rain back-row"></div>
+</body>
+<div class = "main" id = "section1">
+<div class = "title">
+      <p>TOPOGRAPHY OF TEARS</p>
+    </div>
+    <div class = 'subtitle'>
+      <p>THE MICROSCOPIC STRUCTURES OF DRIED HUMAN TEARS</p>
+    </div>
+    <div class = "tears">
+        <div class = "wrapper">
+            <span class = "tear" onclick = "show_slide(1)"></span>
+            <a href = "#pic-1" class = "tear">
+            <img class = "tear" src = 'assets/drop.png' height="120" width="100" onclick="currentSlide(1)"></a>
+            <p class = 'text'>Psychic Tears</p>
+        </div>
+        <div class = "wrapper">
+        <a href = "#pic-2" class = "tear">
+          <img class = "tear" src = 'assets/drop.png' height="120" width="100" onclick="currentSlide(2)"></a>
+          <p class = 'text'>Basal Tears</p>
+          <span class = "tear" onclick = "show_slide(2)"></span>
+        </div>
+        <div class = "wrapper">
+        <a href = "#pic-3" class = "tear">
+          <img class = "tear" src = 'assets/drop.png' height="120" width="100" onclick="currentSlide(3)"></a>
+          <p class = 'text'>Reflex Tears</p>
+          <span class = "tear" onclick = "show_slide(3)"></span>
+        </div>
+    </div>
+     <div class = "arrow_down">
+      <a href = "#section2" class = "down"><img class = "arrow" src = 'assets/sort-down.png' height="42" width="42"></a>
+      </div>
+    </div>
+  <div class = "main" id = "section2">
+    <div class = "arrow_up">
+      <a href = "#section1" class = "up"><img class = "arrow" src = 'assets/sort-up.png' height="42" width="42"></a>
+      </div>
+    <section>
+  <div class="slideshow-container">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+          <div class="owl-carousel feedback-slider">
+
+            <!-- slider item -->
+            <div class="feedback-slider-item">
+                <div id = "pic-1">
+              <img src="assets/psychic-tear.jpg" class = "pic-1" height = "400px" width = "560px">
+              </div>
+            </div>
+            <!-- /slider item -->
+
+            <!-- slider item -->
+            <div class="feedback-slider-item">
+                <div id = "pic-2">
+              <img src="assets/Basal Tears.jpg" class="pic-2" 
+              height = "400px" width = "560px">
+                </div>
+            </div>
+            <!-- /slider item -->
+
+            <!-- slider item -->
+            <div class="feedback-slider-item">
+              <div id = "pic-3">
+              <img src="assets/Reflexive Tears.jpg" class="pic-3" 
+              height = "400px" width = "560px">
+              </div>
+            </div>
+            <!-- /slider item -->
+            
+          </div><!-- /End feedback-slider -->
+
+        </div><!-- /End col -->
+      </div><!-- /End row -->
+      <!-- next and previous buttons -->
+      <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+      <a class = "next" onclick = "plusSlides(1)">&#10095;</a>
+      <br>
+      <div style = "text-align: center">
+        <span class = "dot" onclick="currentSlide(1)"></span>
+        <span class = "dot" onclick="currentSlide(2)"></span>
+        <span class = "dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div><!-- /End container -->
+  </div><!-- /End customer-feedback -->
+</section>
+  </div>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script  src="js/index.js"></script>
+</body>
+
+</html>
